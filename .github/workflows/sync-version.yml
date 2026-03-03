@@ -89,7 +89,7 @@ jobs:
           git config user.name "froala-travis-bot"
           git config user.email "froala_git_travis_bot@idera.com"
 
-          git add package.json bower.json package-lock.json
+          git add package.json bower.json
           git commit -m "chore: release v${VERSION}" || echo "Nothing to commit"
           git push origin "$BRANCH"
 
